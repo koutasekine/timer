@@ -44,7 +44,9 @@ button.primary{background:var(--accent);border-color:var(--accent);color:#fff;mi
 #marks span{color:var(--sub);white-space:nowrap}
 #marks span.done{color:var(--fg)}
 body[data-phase="3"] #big, body[data-phase="3"] #label{color:var(--p3)}
-body.fs #panel{display:none}
+footer{font-size:11px;color:#777;text-align:right;padding:3px 10px;border-top:1px solid var(--line);background:var(--panel)}
+footer a{color:#777;white-space:nowrap}
+body.fs #panel, body.fs footer{display:none}
 </style>
 </head>
 <body data-phase="0">
@@ -82,6 +84,7 @@ body.fs #panel{display:none}
   <div id="sub"></div>
   <div id="marks"></div>
 </main>
+<footer>タイマー — 試験と講演の時間を計ります。単一 HTML、データはどこにも送信されません。MIT License, Copyright (c) 2026 Kouta Sekine. <a href="https://sapp.jp" target="_blank" rel="noopener">S Apps</a></footer>
 <script>
 "use strict";
 const $ = id => document.getElementById(id);
